@@ -20,7 +20,7 @@ func main() {
 
 	EBT := revenue - expenses
 
-	taxes := EBT * taxRate
+	taxes := EBT * (1 - taxRate/100)
 
 	PAT := EBT - taxes
 
